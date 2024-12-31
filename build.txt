@@ -1,0 +1,3 @@
+displayName = math
+author = Deltoid
+version = 0.1
