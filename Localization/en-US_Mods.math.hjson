@@ -19,14 +19,13 @@ Items: {
 			'''
 			- Math Class -
 			A basic linear function!
-			f(x) = mx + b
+			f(x) = mx + b, m, x, b ∈ ℝ
+			Time wasted on trying to make this look good: 2 hours
 			'''
 	}
 }
 
-DamageClasses: {
-	MathDamage.DisplayName: math damage
-}
+DamageClasses.MathDamage.DisplayName: math damage
 
 Projectiles: {
 	LinearFunctionProjectile.DisplayName: Linear Function Projectile

@@ -4,6 +4,7 @@ using Terraria.ID;
 
 namespace math.Items {
     public class FunctionBlank : ModItem {
+        public override string Texture => "math/Items/Function";
         public override void SetDefaults() {
             Item.width = 58;
             Item.height = 106;

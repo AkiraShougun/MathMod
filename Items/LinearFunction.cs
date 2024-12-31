@@ -6,6 +6,7 @@ using math.Projectiles;
 
 namespace math.Items {
     public class LinearFunction : ModItem {
+    public override string Texture => "math/Items/Function";
         public override void SetDefaults() {
             Item.width = 58;
             Item.height = 106;
@@ -14,14 +15,14 @@ namespace math.Items {
             Item.value = Item.sellPrice(silver: 75);
             
             Item.UseSound = SoundID.Item105;
-            Item.useTime = 50;
-			Item.useAnimation = 50;
+            Item.useTime = 20;
+			Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.HoldUp;
 
             Item.rare = ItemRarityID.Master;
 
             Item.DamageType = ModContent.GetInstance<MathDamage>();
-            Item.damage = 100;
+            Item.damage = 17;
             Item.knockBack = 0;
 
             Item.shoot = ModContent.ProjectileType<LinearProjectile>();
