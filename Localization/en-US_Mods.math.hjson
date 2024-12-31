@@ -3,4 +3,34 @@ Items: {
 		DisplayName: Modular Group
 		Tooltip: ""
 	}
+
+	FunctionBlank: {
+		DisplayName: f(x)
+		Tooltip:
+			'''
+			- Math Class -
+			A blank function!
+			'''
+	}
+
+	LinearFunction: {
+		DisplayName: Linear Function
+		Tooltip:
+			'''
+			- Math Class -
+			A basic linear function!
+			f(x) = mx + b
+			'''
+	}
+}
+
+DamageClasses: {
+	MathDamageClass.DisplayName: Math Damage Class
+	MathDamage.DisplayName: Math Damage
+}
+
+Projectiles: {
+	LinearFunctionProjectile.DisplayName: Linear Function Projectile
+	FunctionDust.DisplayName: Function Dust
+	LinearProjectile.DisplayName: Linear Projectile
 }
