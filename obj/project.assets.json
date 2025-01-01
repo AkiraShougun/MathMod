@@ -31,19 +31,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/rileylozon/.nuget/packages/": {}
+    "C:\\Users\\zobia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/rileylozon/Library/Application Support/Terraria/tModLoader/ModSources/math/math.csproj",
+      "projectUniqueName": "c:\\Users\\zobia\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\math\\math.csproj",
       "projectName": "math",
-      "projectPath": "/Users/rileylozon/Library/Application Support/Terraria/tModLoader/ModSources/math/math.csproj",
-      "packagesPath": "/Users/rileylozon/.nuget/packages/",
-      "outputPath": "/Users/rileylozon/Library/Application Support/Terraria/tModLoader/ModSources/math/obj/",
+      "projectPath": "c:\\Users\\zobia\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\math\\math.csproj",
+      "packagesPath": "C:\\Users\\zobia\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\zobia\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\math\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/rileylozon/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\zobia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -93,7 +93,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
