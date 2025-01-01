@@ -32,6 +32,8 @@ namespace math.Items {
         public override void AddRecipes()
         {
             CreateRecipe()
+                .AddIngredient(ModContent.ItemType<FunctionBlank>())
+                .AddIngredient(ItemID.Wood,5)
                 .Register();
         }
     }
