@@ -17,7 +17,7 @@ namespace math.Items {
 			Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.HoldUp;
 
-            Item.rare = ItemRarityID.White;
+            Item.rare = ItemRarityID.Gray;
         }
 
         public override void AddRecipes()

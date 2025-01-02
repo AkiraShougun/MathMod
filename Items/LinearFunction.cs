@@ -1,8 +1,8 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using Terraria.Audio;
 using math.Projectiles;
+using math.Content.Rarities;
 
 namespace math.Items {
     public class LinearFunction : ModItem {
@@ -19,7 +19,7 @@ namespace math.Items {
 			Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.HoldUp;
 
-            Item.rare = ItemRarityID.Master;
+            Item.rare = ModContent.RarityType<MathRarity>();
 
             Item.DamageType = ModContent.GetInstance<MathDamage>();
             Item.damage = 17;

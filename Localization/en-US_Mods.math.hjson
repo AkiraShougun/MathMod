@@ -1,7 +1,13 @@
 Items: {
 	ModularGroup: {
 		DisplayName: Modular Group
-		Tooltip: ""
+		Tooltip:
+			'''
+			- Math Class -
+			+15% math damage
+			+35% math crit chance
+			PSL(2, ℤ)
+			'''
 	}
 
 	FunctionBlank: {
@@ -20,7 +26,6 @@ Items: {
 			- Math Class -
 			A basic linear function!
 			f(x) = mx + b, m, x, b ∈ ℝ
-			Time wasted on trying to make this look good: 2 hours
 			'''
 	}
 }

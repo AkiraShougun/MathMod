@@ -1,4 +1,6 @@
+using System;
 using math.Items;
+using Microsoft.NET.StringTools;
 using Microsoft.Xna.Framework.Input;
 using Terraria;
 using Terraria.ID;
@@ -52,8 +54,8 @@ namespace math.NPCs
         {
             string[] chat = {
                 "Hello there, fellow mathematician!",
-                "Let X be an algebraic projective variety.",
-                "Have you heard of the term 'the mathematical experience'? I am obsessed over it."
+                "Have you heard of the term 'the mathematical experience'? I am obsessed over it.",
+                "A monad is just a monoid in the category of endofunctors, what's the problem?"
             };
             return Main.rand.Next(chat);
         }
@@ -67,18 +69,25 @@ namespace math.NPCs
         public override void OnChatButtonClicked(bool firstButton, ref string shopName)
         {
             base.OnChatButtonClicked(firstButton, ref shopName);
-            if (firstButton){
+            if (firstButton) {
                 shopName = "Shop";
             }
-            else{
-                Main.npcChatText = "Never gonna give you up.";
+            else {
+                string[] quote = {
+                    "Let X be an algebraic projective variety…",
+                    "It's called a theorem, so it must be true. We call this proof by intimidation.",
+                    "Proof by look at the picture",
+                    "I'm a holomorphic function that satisfies the modularity condition and lives on H"
+                };
+                Main.npcChatText = Main.rand.Next(quote);
             }
         }
 
         public override void AddShops()
         {
             var npcShop = new NPCShop(Type, "Shop")
-            .Add(new Item(ModContent.ItemType<ModularGroup>()) { shopCustomPrice = Item.buyPrice(copper: 15) });
+            .Add(new Item(ModContent.ItemType<FunctionBlank>()) {shopCustomPrice = Item.buyPrice(gold: 3)})
+            .Add(new Item(ModContent.ItemType<ModularGroup>()) { shopCustomPrice = Item.buyPrice(gold: 3) });
             npcShop.Register();
         }
     }
