@@ -86,8 +86,8 @@ namespace math.NPCs
         public override void AddShops()
         {
             var npcShop = new NPCShop(Type, "Shop")
-            .Add(new Item(ModContent.ItemType<FunctionBlank>()) {shopCustomPrice = Item.buyPrice(gold: 3)})
-            .Add(new Item(ModContent.ItemType<ModularGroup>()) { shopCustomPrice = Item.buyPrice(gold: 3) });
+            .Add(new Item(ModContent.ItemType<FunctionBlank>()) {shopCustomPrice = Item.buyPrice(gold: 3, silver: 14, copper: 15)})
+            .Add(new Item(ModContent.ItemType<ModularGroup>()) { shopCustomPrice = Item.buyPrice(gold: 5, silver: 77, copper: 21)});
             npcShop.Register();
         }
     }

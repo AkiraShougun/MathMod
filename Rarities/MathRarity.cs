@@ -6,6 +6,6 @@ namespace math.Content.Rarities
 {
 	public class MathRarity : ModRarity
 	{
-		public override Color RarityColor => new Color(5, (byte)(Main.DiscoG / 0.75f), 255);
+		public override Color RarityColor => Color.Lerp(new Color(5, 255, 255), new Color(5, 166, 255), Main.masterColor);
 	}
 }
