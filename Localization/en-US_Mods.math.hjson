@@ -6,7 +6,7 @@ Items: {
 			- Math Class -
 			+15% math damage
 			+35% math crit chance
-			PSL(2, ℤ)
+			SL(2, Z)
 			'''
 	}
 
@@ -25,7 +25,7 @@ Items: {
 			'''
 			- Math Class -
 			A basic linear function!
-			f(x) = mx + b, m, x, b ∈ ℝ
+			f(x) = mx + b, m, x, b ∈ R
 			'''
 	}
 }
@@ -44,13 +44,13 @@ NPCs: {
 
 		TownNPCMood: {
 			Content: I am content.
-			NoHome: I hate not having a home.
-			FarFromHome: I am too far from home.
-			LoveSpace: I love having so much space.
-			DislikeCrowded: I dislike how crowded I am.
+			NoHome: I hate not having a home chat.
+			FarFromHome: Chat why am I so far from my home?
+			LoveSpace: Chat I love having so much space.
+			DislikeCrowded: I dislike how crowded chat is.
 			HateCrowded: I hate how crowded I am.
-			LikeNPC_Princess: I like {NPCName}.
-			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: Chat, I like {NPCName}.
+			Princess_LovesNPC: Chat, I love {NPCName}.
 		}
 	}
 }

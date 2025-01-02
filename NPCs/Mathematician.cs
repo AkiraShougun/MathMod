@@ -8,13 +8,10 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.Utilities;
 
 
-namespace math.NPCs
-{
+namespace math.NPCs {
     [AutoloadHead]
-    public class Mathematician : ModNPC
-    {
-        public override void SetStaticDefaults()
-        {
+    public class Mathematician : ModNPC {
+        public override void SetStaticDefaults() {
             Main.npcFrameCount[Type] = 26;
 
             NPCID.Sets.ExtraFramesCount[Type] = 9;
@@ -25,8 +22,7 @@ namespace math.NPCs
             NPCID.Sets.AttackAverageChance[Type] = 30;
             NPCID.Sets.HatOffsetY[Type] = -6;
         }
-        public override void SetDefaults()
-        {
+        public override void SetDefaults() {
             NPC.townNPC = true; 
 			NPC.friendly = true; 
 			NPC.width = 18;
@@ -42,16 +38,14 @@ namespace math.NPCs
 			AnimationType = NPCID.Guide;
         }
 
-        public override float SpawnChance(NPCSpawnInfo spawnInfo)
-        {
+        public override float SpawnChance(NPCSpawnInfo spawnInfo) {
             if (NPC.CountNPCS(ModContent.NPCType<Mathematician>()) >= 1){
                 return 0;
             }
             return SpawnCondition.OverworldDay.Chance * 1.0f;
         }
 
-        public override string GetChat()
-        {
+        public override string GetChat() {
             string[] chat = {
                 "Hello there, fellow mathematician!",
                 "Have you heard of the term 'the mathematical experience'? I am obsessed over it.",
@@ -60,14 +54,12 @@ namespace math.NPCs
             return Main.rand.Next(chat);
         }
 
-        public override void SetChatButtons(ref string button, ref string button2)
-        {
+        public override void SetChatButtons(ref string button, ref string button2) {
             button = "Shop";
             button2 = "Quote";
         }
 
-        public override void OnChatButtonClicked(bool firstButton, ref string shopName)
-        {
+        public override void OnChatButtonClicked(bool firstButton, ref string shopName) {
             base.OnChatButtonClicked(firstButton, ref shopName);
             if (firstButton) {
                 shopName = "Shop";
@@ -83,11 +75,10 @@ namespace math.NPCs
             }
         }
 
-        public override void AddShops()
-        {
+        public override void AddShops() {
             var npcShop = new NPCShop(Type, "Shop")
             .Add(new Item(ModContent.ItemType<FunctionBlank>()) {shopCustomPrice = Item.buyPrice(gold: 3, silver: 14, copper: 15)})
-            .Add(new Item(ModContent.ItemType<ModularGroup>()) { shopCustomPrice = Item.buyPrice(gold: 5, silver: 77, copper: 21)});
+            .Add(new Item(ModContent.ItemType<ModularGroup>())  {shopCustomPrice = Item.buyPrice(gold: 5, silver: 77, copper: 21)});
             npcShop.Register();
         }
     }
